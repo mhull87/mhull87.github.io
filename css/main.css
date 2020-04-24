@@ -1,11 +1,12 @@
 body {
     font-size: 18px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    max-width: 750px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
-header, footer {
+header,
+footer {
     background-color: teal;
     color: white;
     text-align: center;
@@ -23,9 +24,20 @@ h2 {
     border-bottom: 1.5px solid lightgray;
 }
 
+footer {
+    font-size: .8em;
+    padding-top: 1rem;
+}
+
+footer p {
+    font-size: .6rem;
+    color: lightskyblue;
+}
+
 footer a {
     color: white;
 }
+
 footer a:visited {
     color: lightskyblue;
 }
