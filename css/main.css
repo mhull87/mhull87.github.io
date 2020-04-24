@@ -32,7 +32,7 @@ footer {
 
 footer p {
     font-size: 1rem;
-    color: lightskyblue;
+    color:white;
 }
 
 footer a {
@@ -40,5 +40,5 @@ footer a {
 }
 
 footer a:visited {
-    color: lightskyblue;
+    color: white;
 }
