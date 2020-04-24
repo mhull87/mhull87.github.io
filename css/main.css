@@ -15,13 +15,17 @@ header, footer {
 
 img {
     float: right;
-    padding: .2rem;
+    margin: .2rem;
+    box-shadow: 0 8px 10px 0 lightgray;
 }
 
 h2 {
     border-bottom: 1.5px solid lightgray;
 }
 
-footer a:visited, footer a {
+footer a {
+    color: white;
+}
+footer a:visited {
     color: white;
 }
