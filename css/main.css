@@ -1,0 +1,23 @@
+body {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: teal;
+    color: white;
+    text-align: center;
+    padding: .35rem;
+    border-radius: 10px;
+}
+
+img {
+    float: right;
+    padding: .2rem;
+}
+
+h2 {
+    border-bottom: 1.5px solid lightgray;
+}
