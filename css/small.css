@@ -15,13 +15,13 @@ footer {
 }
 
 header {
+    margin-top: 1rem;
     font-family: 'Dr Sugiyama', cursive;
     font-size: 25px;
 }
 
 img {
     width: 125px;
-    float: right;
     margin: .2rem;
     box-shadow: 0 8px 10px 0 lightgray;
 }
