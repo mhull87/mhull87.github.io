@@ -47,7 +47,7 @@ img {
     border: 1px solid black;
 }
 
-content {
+.content {
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 1rem;
