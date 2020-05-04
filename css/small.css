@@ -26,6 +26,10 @@ img {
     box-shadow: 0 8px 10px 0 lightgray;
 }
 
+h1 {
+    font-weight: normal;
+}
+
 h2 {
     border-bottom: 1.5px solid lightgray;
 }
