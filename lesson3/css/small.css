@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+body {
+    font-size: 18px;
+    max-width: 950px;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #9fd4ff;
+}
+
+img {
+    float: left;
+    width: 150px;
+}
+
+#logo {
+    display: inline-block;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    list-style: none;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background-color: #3d3b8e;
+    font-size: 1.2rem;
+    border: 1rem outset #454491;
+    border-radius: 1rem;
+    font-variant: small-caps;
+}
+
+li {
+    place-self: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+}
+
+h1 {
+    color: white;
+    background-color: #3D3B8E;
+    padding: .5rem;
+    padding-right: 8rem;
+    text-align: center;
+    border-bottom: 1rem solid #50c9ce;
+    font-variant: small-caps;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.home p {
+    justify-self: start;
+    padding-top: 1rem;
+}
+
+.color-scheme {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    height: 100vh;
+}
+
+
+
+.accent-blue {
+    background-color: #3D3B8E;
+    color: white;
+}
+
+.accent-green {
+    background-color: #50c9ce;
+}
+
+.main-blue {
+    background-color: #9fd4ff;
+}
+
+.warning-red {
+    background-color: #A8201A;
+    color: white;
+}
+
+.color-scheme p {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
