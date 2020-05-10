@@ -21,8 +21,6 @@ ul {
     margin: 0;
     background-color: #3d3b8e;
     font-size: 1.2rem;
-    border: 1rem outset #454491;
-    border-radius: 1rem;
     font-variant: small-caps;
     text-align: center;
 }
@@ -84,6 +82,14 @@ h2 {
 }
 
 footer {
+    border-top: 1rem solid #50c9ce;
     text-align: center;
+    margin-top: 1rem;
     padding: 1rem;
+    background-color: #3d3b8e;
+    color: white;
+}
+
+footer a {
+    color: white;
 }

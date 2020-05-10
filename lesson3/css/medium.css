@@ -4,6 +4,8 @@
         flex: 1 1 100%;
         align-items: center;
         justify-content: space-evenly;
+        border: 1rem outset #454491;
+        border-radius: 1rem;
     }
 
     img {
