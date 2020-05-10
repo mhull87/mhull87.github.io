@@ -1,0 +1,14 @@
+@media only screen and (min-width: 680px) {
+    nav ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    img {
+        float: left;
+    }
+    
+    #logo {
+        display: inline-block;
+    }
+
+}

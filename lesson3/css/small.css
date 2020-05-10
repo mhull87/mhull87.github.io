@@ -1,34 +1,29 @@
 * {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-
 }
+img {
+    width: 150px;
+}
+
 
 body {
     font-size: 18px;
     max-width: 950px;
+
     align-self: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1rem;
     background-color: #9fd4ff;
 }
 
-img {
-    float: left;
-    width: 150px;
-}
 
-#logo {
-    display: inline-block;
-}
 
 ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
+    grid-template-columns: 1fr;
     list-style: none;
-    padding: 1.5rem;
-    margin-top: 2rem;
+    padding: 0;
+    margin: 0;
     background-color: #3d3b8e;
     font-size: 1.2rem;
     border: 1rem outset #454491;
@@ -43,7 +38,8 @@ li {
 nav a {
     color: white;
     text-decoration: none;
-
+    display: block;
+    padding: 1.5rem;
 }
 
 h2 {
