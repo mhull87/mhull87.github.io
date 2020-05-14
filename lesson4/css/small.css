@@ -59,7 +59,7 @@ nav button {
     color: white;
 }
 
-nav a:focus {
+.active {
     background-color: rgba(0, 0, 0, .2);
 }
 
