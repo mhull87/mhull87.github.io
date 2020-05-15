@@ -57,7 +57,7 @@ nav ul {
     font-size: 1.2rem;
     font-variant: small-caps;
     text-align: center;
-    border-top: 1px solid grgb(0, 0, 0, .3)
+    border-top: 1px solid rgba(0, 0, 0, .3);
 }
 
 nav a {
