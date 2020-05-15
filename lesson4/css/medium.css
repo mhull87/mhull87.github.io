@@ -1,6 +1,12 @@
 /* 35em is also 560px when base fornt is 16px */
 @media only screen and (min-width: 35em) {
 
+    body {
+        margin: auto;
+    }
 
+    h2 {
+    font-size: 2.5em;
+}
 
 }

@@ -8,9 +8,7 @@ body {
     padding: 0;
     margin: 0;
     max-width: 950px;
-    margin: 1rem;
     background-color: #9fd4ff;
-
 }
 
 header {
@@ -19,11 +17,25 @@ header {
     justify-content: center;
     background-color: #3D3B8E;
     color: white;
-    border-bottom: 1rem solid #50c9ce;
+    border-bottom: 1px solid #50c9ce;
+    padding: 2%;
+    padding-bottom: 4%;
+    margin: 0;
 }
 
 header img {
     width: 80px;
+}
+
+header h1 {
+    
+    display: block;
+    padding-left: 2%;
+}
+
+div {
+    padding-left: 2%;
+    margin-top: -5%;
 }
 
 .header {
@@ -31,12 +43,17 @@ header img {
     flex-direction: column;
 }
 
+nav {
+    background-color: #3D3B8E;
+    text-align: center;
+    border-bottom: 1px solid #50c9ce;
+}
+
 nav ul {
     display: block;
     list-style: none;
     padding-left: 0;
     margin: 0;
-    background-color: #3d3b8e;
     font-size: 1.2rem;
     font-variant: small-caps;
     text-align: center;
@@ -58,12 +75,11 @@ nav button {
     font-size: 1.6rem;
     color: white;
 }
-
-.active {
+nav ul li.active a {
     background-color: rgba(0, 0, 0, .2);
 }
 
-nav a:hover {
+nav ul li a:hover {
     background-color: rgba(0, 0, 0, .4);
 }
 
@@ -75,7 +91,6 @@ h2 {
     color: white;
     background-color: #3D3B8E;
     padding: .5rem;
-    padding-right: 8rem;
     text-align: center;
     border-bottom: 1rem solid #50c9ce;
     font-variant: small-caps;
@@ -94,9 +109,3 @@ footer a {
     color: white;
 }
 
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
