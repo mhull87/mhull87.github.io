@@ -1,0 +1,78 @@
+body {
+    background-color: palegoldenrod;
+    font-size: 20px;
+}
+
+p {
+    margin: 80px;
+    text-align: center;
+    padding: 5px;
+    background-color: lightseagreen;
+    color: white;
+
+}
+
+.p1{
+    border: 5px solid black;
+}
+
+.p2 {
+    outline: 5px solid black;
+}
+
+.p3 {
+    outline: 5px solid black;
+    outline-offset: 5px;
+}
+
+.p4 {
+    border: 5px dotted black;
+}
+
+.p5 {
+    border: 5px dashed black;
+}
+
+.p6 {
+    border: 5px double black;
+}
+
+.p7 {
+    border: 15px groove pink;
+}
+
+.p8 {
+    border: 15px ridge orangered;
+}
+
+.p9 {
+    border: 15px inset blueviolet;
+}
+
+.p10 {
+    border: 15px outset goldenrod;
+}
+
+.p11 {
+    border-radius: 10%;
+}
+
+.p12 {
+    border-radius: 50%;
+}
+
+.p13 {
+    border-radius: 100px;
+}
+
+.p14 {
+    border-radius: 90% 10%;
+}
+
+.p15 {
+    border-radius: 30px 40px 70px 10px;
+}
+
+.p16 {
+    border-radius: 1000em 100em 0 0;
+}

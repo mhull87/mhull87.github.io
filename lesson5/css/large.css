@@ -1,0 +1,32 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 60rem) {
+
+
+
+header img {
+    width: 150px;
+}
+
+header {
+    font-size: larger;
+}
+
+
+nav ul {
+    border: none;
+}
+
+nav button {
+    display: none;
+}
+nav ul.hide {
+    display: block;
+}
+ #primaryNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+ }
+
+}
