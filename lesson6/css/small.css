@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    background-color: #bbe0ff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3D3B8E;
+    color: white;
+    border-bottom: 1px solid #50c9ce;
+    padding: 2%;
+    margin: 0;
+}
+
+header img {
+    width: 80px;
+}
+
+#banner {
+    font-size: x-large;
+    background-color: #50c9ce;
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+    font-variant: small-caps;
+    font-weight: bolder;
+}
+
+.header {
+    padding-left: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header p {
+    margin-top: -5%;
+}
+
+nav {
+    background-color: #3D3B8E;
+    text-align: center;
+    border-bottom: 1px solid #50c9ce;
+}
+
+nav ul {
+    display: block;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    font-variant: small-caps;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+}
+
+nav a {
+    color: rgba(255, 255, 255, .8);
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, .2);
+    color: #50c9ce;
+    font-weight: bolder;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {
+    max-width: 950px;
+    margin: auto;
+}
+
+h2 {
+    color: white;
+    background-color: #3D3B8E;
+    padding: .5rem;
+    text-align: center;
+    border-bottom: 1rem solid #50c9ce;
+    font-variant: small-caps;
+    max-width: 50%;
+    border-radius: 80% 0% 80% 0%;
+}
+
+/* Placeholders*/
+
+.placeholders {
+    border: 3px dashed gray;
+    padding: 2%;
+    margin: 2% auto;
+    background-color: lightgray;
+    text-align: center;
+    max-width: 50%;
+}
+
+footer {
+    max-width: 950px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 1rem solid #50c9ce;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #3d3b8e;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
