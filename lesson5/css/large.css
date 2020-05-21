@@ -11,7 +11,10 @@ header {
     font-size: larger;
 }
 
-
+header div {
+    line-height: 1em;
+    
+}
 nav ul {
     border: none;
 }

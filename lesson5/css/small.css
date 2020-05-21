@@ -10,11 +10,6 @@ body {
     background-color: #bbe0ff;
 }
 
-main {
-    max-width: 950px;
-    margin: auto;
-}
-
 header {
     display: flex;
     align-items: center;
@@ -23,8 +18,6 @@ header {
     color: white;
     border-bottom: 1px solid #50c9ce;
     padding: 2%;
-    padding-right: 5%;
-    padding-bottom: 4%;
     margin: 0;
 }
 
@@ -32,19 +25,24 @@ header img {
     width: 80px;
 }
 
-header h1 {
-    padding-left: 2%;
-}
-
-div {
-    padding-left: 2%;
-    margin-top: -5%;
+#banner {
+    font-size: x-large;
+    background-color: #50c9ce;
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+    font-variant: small-caps;
+    font-weight: bolder;
 }
 
 .header {
+    padding-left: 2%;
     display: flex;
-    flex-direction: column;
-    min-height: fit-content;
+    flex-flow: column nowrap;
+}
+
+.header p {
+    margin-top: -5%;
 }
 
 nav {
@@ -79,8 +77,11 @@ nav button {
     font-size: 1.6rem;
     color: white;
 }
+
 nav ul li.active a {
     background-color: rgba(0, 0, 0, .2);
+    color: #50c9ce;
+    font-weight: bolder;
 }
 
 nav ul li a:hover {
@@ -89,6 +90,11 @@ nav ul li a:hover {
 
 nav ul.hide {
     display: none;
+}
+
+main {
+    max-width: 950px;
+    margin: auto;
 }
 
 h2 {
@@ -107,7 +113,7 @@ h2 {
 .placeholders {
     border: 3px dashed gray;
     padding: 2%;
-    margin: 2% auto ;
+    margin: 2% auto;
     background-color: lightgray;
     text-align: center;
     max-width: 50%;
@@ -131,4 +137,3 @@ footer {
 footer a {
     color: white;
 }
-
