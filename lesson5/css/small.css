@@ -10,6 +10,16 @@ body {
     background-color: #bbe0ff;
 }
 
+#banner {
+    font-size: x-large;
+    background-color: #50c9ce;
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+    font-variant: small-caps;
+    font-weight: bolder;
+}
+/*Header*/
 header {
     display: flex;
     align-items: center;
@@ -25,16 +35,6 @@ header img {
     width: 80px;
 }
 
-#banner {
-    font-size: x-large;
-    background-color: #50c9ce;
-    text-align: center;
-    margin: auto;
-    padding: 2rem;
-    font-variant: small-caps;
-    font-weight: bolder;
-}
-
 .header {
     padding-left: 2%;
     display: flex;
@@ -43,8 +43,10 @@ header img {
 
 .header p {
     margin-top: -5%;
+    max-width: 100%;
 }
 
+/*Nav*/
 nav {
     background-color: #3D3B8E;
     text-align: center;
@@ -92,6 +94,7 @@ nav ul.hide {
     display: none;
 }
 
+/*Main*/
 main {
     max-width: 950px;
     margin: auto;
@@ -108,17 +111,45 @@ h2 {
     border-radius: 80% 0% 80% 0%;
 }
 
-/* Placeholders*/
-
-.placeholders {
-    border: 3px dashed gray;
-    padding: 2%;
-    margin: 2% auto;
-    background-color: lightgray;
-    text-align: center;
-    max-width: 50%;
+/*hero div*/
+.hero {
+    position: relative;
 }
 
+.heroimg {
+    width: 100%;
+}
+
+.summary {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    background-color: #50c9ce;
+    opacity: .7;
+    padding: 2%;
+    border: 1rem outset #bbe0ff;
+}
+
+/*5 Day Forecast Div*/
+.forecast h3 {
+    text-align: center;
+}
+
+.forecastdays {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.days {
+    text-align: center;
+    border: 1px solid black;
+}
+
+/*Article Div*/
+
+
+/*Footer*/
 footer {
     max-width: 950px;
     margin: auto;
