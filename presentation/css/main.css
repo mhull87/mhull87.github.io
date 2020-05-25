@@ -13,16 +13,16 @@ p {
 }
 
 .p1{
-    border: 5px solid black;
+    box-shadow: 10px 10px 5px blueviolet, 2em 1em black;
 }
 
 .p2 {
-    outline: 5px solid black;
+    box-shadow: x blueviolet;
 }
 
 .p3 {
-    outline: 5px solid black;
-    outline-offset: 5px;
+    box-shadow: inset 10px 10px 5px 1px blueviolet;
+    font-size: 40px;
 }
 
 .p4 {
@@ -76,3 +76,4 @@ p {
 .p16 {
     border-radius: 1000em 100em 0 0;
 }
+
