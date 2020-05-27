@@ -1,13 +1,13 @@
 * {
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
 }
 
 body {
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     padding: 0;
     margin: 0;
-    background-color: #bbe0ff;
+    background-color: #c7e4fc;
 }
 
 #banner {
@@ -19,6 +19,7 @@ body {
     font-variant: small-caps;
     font-weight: bolder;
 }
+
 /*Header*/
 header {
     display: flex;
@@ -39,11 +40,15 @@ header img {
     padding-left: 2%;
     display: flex;
     flex-flow: column nowrap;
+    white-space: nowrap;
 }
 
+.header h1 {
+    margin: 0;
+}
 .header p {
-    margin-top: -5%;
     max-width: 100%;
+    margin: 0;
 }
 
 /*Nav*/
@@ -76,7 +81,7 @@ nav button {
     margin: .2rem 2%;
     background-color: transparent;
     border: none;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: white;
 }
 
@@ -98,6 +103,7 @@ nav ul.hide {
 main {
     max-width: 950px;
     margin: auto;
+    padding: 10px;
 }
 
 h2 {
