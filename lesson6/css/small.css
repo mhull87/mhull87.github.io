@@ -140,12 +140,13 @@ h3 {
     opacity: .7;
     padding: 2%;
     border: 1rem outset #bbe0ff;
-    width: 50%
+    height: 12rem;
 }
 
 .summary h3, .summary p {
-    padding: .5rem;
+    line-height: 1.5rem;
     margin: 0;
+    font-weight: bold;
 }
 
 .summary h3 {

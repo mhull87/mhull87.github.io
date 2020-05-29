@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Preston, Idaho Town Page. Weather Summery, Five Day Forecast, Town Articles">
     <link rel="shortcut icon" href="images/wfavicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -39,7 +39,10 @@
     <main>
         <h2>Preston</h2>
         <div class="hero">
-            <picture><img class="heroimg" src="https://placekitten.com/950/300" alt="kitten placeholder image">
+            <picture>
+                <source media="(max-width: 560px)" srcset="images/hero400.jpg">
+                <source media="(max-width: 960px)" srcset="images/hero600.jpg">
+                <img class="heroimg" src="images/hero800.jpg" alt="hero placeholder image">
             </picture>
             <section class="summary">
                 <h3>Weather Summary</h3>
@@ -131,6 +134,8 @@
         <span id="date"></span>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
 </body>
 
 </html>

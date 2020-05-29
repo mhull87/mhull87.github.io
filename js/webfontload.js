@@ -1,0 +1,1 @@
+WebFont.load({google: {families: ['Dr+Sugiyama']}});
