@@ -46,10 +46,10 @@
             </picture>
             <section class="summary">
                 <h3>Weather Summary</h3>
-                <p>Currently: 79*</p>
-                <p>High: 81*</p>
-                <p>Wind Chill: none</p>
-                <p>Wind Speed: 2mph</p>
+                <p>Currently: <span id="temp">49</span>&deg;f</p>
+                <p>High: 81&deg;f</p>
+                <p>Wind Chill: <span id="chill"></span>&deg;f</p>
+                <p>Wind Speed: <span id="speed">5</span> mph</p>
             </section>
         </div>
 
@@ -86,7 +86,7 @@
 
         <h3>News</h3>
         <section class="article">
-            <p class="title">Title</p>
+            <h3 class="title">Title</h3>
             <p class="author">By: Jane Doe</p>
             <img class="articleimg" src="https://placekitten.com/250/300" alt="Kitten placeholder">
 
@@ -136,6 +136,7 @@
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 
 </html>
