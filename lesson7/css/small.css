@@ -212,3 +212,14 @@ footer {
 footer a {
     color: white;
 }
+
+.gallery {
+    max-width: 1050px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery figure {
+    padding: 1.5%;
+    margin: 0;
+}
