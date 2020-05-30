@@ -215,16 +215,16 @@ footer a {
 
 /*gallery main*/
 body.gallery {
-    display: flex;
     margin: auto;
-    align-content: space-around;
+    align-items: ;
 }
 
 .gallery {
     max-width: 1050px;
     display: flex;
     flex-wrap: wrap;
-    align-content: space- space-between;
+    align-content: center;
+    justify-content: center;
 }
 
 .gallery figure {
