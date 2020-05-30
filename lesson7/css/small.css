@@ -213,13 +213,25 @@ footer a {
     color: white;
 }
 
+/*gallery main*/
+body.gallery {
+    display: flex;
+    margin: auto;
+    align-content: space-around;
+}
+
 .gallery {
     max-width: 1050px;
     display: flex;
     flex-wrap: wrap;
+    align-content: space- space-between;
 }
 
 .gallery figure {
     padding: 1.5%;
     margin: 0;
+}
+
+.gallery figure img {
+margin: auto;
 }
