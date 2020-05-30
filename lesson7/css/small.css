@@ -214,11 +214,6 @@ footer a {
 }
 
 /*gallery main*/
-body.gallery {
-    margin: auto;
-    align-items: ;
-}
-
 .gallery {
     max-width: 1050px;
     display: flex;
@@ -230,8 +225,4 @@ body.gallery {
 .gallery figure {
     padding: 1.5%;
     margin: 0;
-}
-
-.gallery figure img {
-margin: auto;
 }
