@@ -216,13 +216,13 @@ footer a {
 /*gallery main*/
 .gallery {
     max-width: 1050px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
 }
 
 .gallery figure {
     padding: 1.5%;
     margin: 0;
 }
+

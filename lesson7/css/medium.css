@@ -26,4 +26,8 @@ header {
     padding: 2%;
 }
 
+.gallery {
+    grid-template-columns: 1fr 1fr;
+}
+
 }
