@@ -215,14 +215,15 @@ footer a {
 
 /*gallery main*/
 .gallery {
-    max-width: 1050px;
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
 }
 
-.gallery figure {
-    padding: 5px;
-    margin: 0;
+.gallery figure, img {
+    max-width: 300px;
+    margin: 0;    
+    padding: 2%;
+    width: 100%;
 }
 
