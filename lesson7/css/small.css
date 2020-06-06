@@ -103,7 +103,7 @@ nav ul.hide {
     display: none;
 }
 
-/*Main*/
+/*--------------------Main-----------------------------------*/
 main {
     max-width: 950px;
     margin: auto;
@@ -127,7 +127,7 @@ h3 {
     font-size: 2rem;
 }
 
-/*hero div*/
+/*--------------------------------hero div-----------------------*/
 .hero {
     position: relative;
 }
@@ -137,18 +137,20 @@ h3 {
 }
 
 .summary {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 1.5rem;
     left: 1.5rem;
     background-color: #50c9ce;
     opacity: .7;
     padding: 2%;
-    border: 1rem outset #bbe0ff;
-    height: 12rem;
+    border: .5rem outset #bbe0ff;
 }
 
 .summary h3, .summary p {
-    line-height: 1.5rem;
+    line-height: 2rem;
     margin: 0;
     font-weight: bold;
 }
@@ -187,6 +189,7 @@ h3 {
 }
 
 .articleimg {
+    display: block;
     margin: auto;
 }
 
