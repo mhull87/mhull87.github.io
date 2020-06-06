@@ -69,6 +69,10 @@ nav ul {
     border-top: 1px solid rgba(0, 0, 0, .3);
 }
 
+nav ul li {
+    flex: 1 1 100%;
+}
+
 nav a {
     color: rgba(255, 255, 255, .8);
     text-decoration: none;

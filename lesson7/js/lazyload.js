@@ -3,8 +3,8 @@ const imagesToLoad = document.querySelectorAll("img[data-src]");
 
 //telling it when to load
 const imgOptions = {
-    threshold: 1,
-    rootMargin: "0px 0px -55px 0px"
+    threshold: 0,
+    rootMargin: "0px 0px 5px 0px"
 };
 
 //move from data-src to src and remove data-src attribute
