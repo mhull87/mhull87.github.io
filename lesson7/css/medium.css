@@ -48,8 +48,7 @@ header {
     
     .phone {
         grid-area: 3/3/4/4;
-        justify-self: start;
-        align-self: top;
+        place-self: start;
         margin: 0;
     }
     
