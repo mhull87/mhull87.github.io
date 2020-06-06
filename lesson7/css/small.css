@@ -227,3 +227,13 @@ footer a {
     width: 100%;
 }
 
+
+/*lazy load*/
+img[data-src] {
+    filter: blur(.2em);
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 1.5s;
+}
