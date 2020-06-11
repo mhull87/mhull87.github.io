@@ -25,10 +25,10 @@ table tr th {
     color: white;
 } 
 
-table td,
-table th {
+table, thead, tfoot, th, tr, td {
     border: 1px solid darkgray;
     border-collapse: collapse;
+    padding: .5rem;
 }
 
 table tfoot tr td{
