@@ -27,7 +27,7 @@ table tr th {
 
 table td,
 table th {
-    border: 1px solid gray;
+    border: 1px solid darkgray;
     border-collapse: collapse;
 }
 
