@@ -37,6 +37,42 @@
 
     <main>
 
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label>Full Name*<input type="text" name="fullname" required></label>
+                <label>Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label>Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label>Zip Code*<input type="number" name="zipcode" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label>Storm Date<input type="date" name="storm-date"></label>
+                <div>Storm Type</div>
+                <label><input type="datalist" name="storm-type"></label>
+                <label>Storm Severity (1-10)<input type="range"></label>
+                <lable>Storm Region<select name="region">
+                    <option value="">Select Region...</option>
+                    <option value="fish-haven">Fish Haven</option>
+                    <option value="preston">Preston</option>
+                    <option value="soda-springs">Soda Springs</option>
+                    </select>
+                </lable>
+                <div>Are you in danger?</div>
+                <label><inupt type="radio" name="in-danger">Yes</label>
+                <label><inupt type="radio" name="in-danger">No</label>
+                <label><inupt type="radio" name="in-danger">Maybe</label>
+
+            
+                </fieldset>
+
+            <fieldset>
+                <legend>Additional Information or Comments</legend>
+                <input type="textarea">
+            </fieldset>
+            <input type="submit" value="Report Storm">
+        </form>
     </main>
 
     <footer>
