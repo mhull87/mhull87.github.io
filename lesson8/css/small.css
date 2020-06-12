@@ -228,7 +228,6 @@ footer a {
 }
 
 .gallery figure, img {
-    max-width: 300px;
     margin: 0;    
     padding: 2%;
     width: 100%;
