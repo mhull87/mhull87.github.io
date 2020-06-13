@@ -34,4 +34,10 @@ nav ul.hide {
     background-color: #50c9ce;
 }
 
+/*------------- FORM ----------------*/
+form label.sbs {
+    padding: .4rem 0;
+    
+}
+
 }

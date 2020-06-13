@@ -36,33 +36,33 @@
 
 
     <main>
-
+<h2>Report A Storm</h2>
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Your Information</legend>
-                <label>Full Name*<input type="text" name="fullname" required></label>
-                <label>Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
-                <label>Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
-                <label>Zip Code*<input type="number" name="zipcode" required></label>
+                <label class="top">Full Name*<input type="text" name="fullname" required></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Zip Code*<input type="number" name="zipcode" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
             </fieldset>
 
             <fieldset>
                 <legend>Storm Information</legend>
-                <label>Storm Date<input type="date" name="storm-date"></label>
+                <label class="top">Storm Date<input type="date" name="storm-date"></label>
                 <div>Storm Type</div>
-                <label><input type="datalist" name="storm-type"></label>
-                <label>Storm Severity (1-10)<input type="range"></label>
-                <lable>Storm Region<select name="region">
-                    <option value="">Select Region...</option>
+                <label class="top"><input type="datalist" name="storm-type"></label>
+                <label class="slider">Storm Severity <br>1 <input id="sliderwidth" type="range"> 10</label>
+                <label class="top">Storm Region <br><select name="region">
+                    <option value="">Select Region... &#9662;</option>
                     <option value="fish-haven">Fish Haven</option>
                     <option value="preston">Preston</option>
                     <option value="soda-springs">Soda Springs</option>
                     </select>
                 </lable>
                 <div>Are you in danger?</div>
-                <label><inupt type="radio" name="in-danger">Yes</label>
-                <label><inupt type="radio" name="in-danger">No</label>
-                <label><inupt type="radio" name="in-danger">Maybe</label>
+                <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+                <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
 
             
                 </fieldset>
@@ -71,7 +71,7 @@
                 <legend>Additional Information or Comments</legend>
                 <input type="textarea">
             </fieldset>
-            <input type="submit" value="Report Storm">
+            <input type="submit" value="Report Storm" class="submitBtn">
         </form>
     </main>
 
