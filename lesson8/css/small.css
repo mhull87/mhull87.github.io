@@ -293,7 +293,7 @@ form label.top select {
 form label.slider,
 form label.region {
     display: block;
-    padding: 1rem 0;
+    padding: 1.5rem 0 .5rem 0;
     color: #3d3b8e;
     font-size: .8rem;
 }

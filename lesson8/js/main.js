@@ -26,3 +26,8 @@ if (d.getDay() == [5]) {
 } else {
     document.getElementById("banner").style.display = "none";
 }
+
+//Storm Severity Range Slider
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
