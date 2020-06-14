@@ -216,6 +216,15 @@ footer {
     color: white;
 }
 
+footer.thanks {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+}
+
 footer a {
     color: white;
 }
