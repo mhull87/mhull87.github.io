@@ -2,7 +2,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-h1{
+h1 {
     display: block;
     text-align: center;
 }
@@ -35,27 +35,25 @@ footer {
     padding: 5%;
 }
 
-
-
-
-
 /*---------------medium----------------*/
 @media only screen and (min-width: 35em) {
-main {
-    columns: 2;
-}
+    main {
+        columns: 2;
+    }
 
-section {
-    -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-    page-break-inside: avoid; /* Firefox */
-    break-inside: avoid; /* IE 10+ */
+    section {
+        -webkit-column-break-inside: avoid;
+        /* Chrome, Safari, Opera */
+        page-break-inside: avoid;
+        /* Firefox */
+        break-inside: avoid;
+        /* IE 10+ */
+    }
 }
-}
-
 
 /*------------------large-----------------*/
 @media only screen and (min-width: 1030px) {
-main {
-    columns: 4;
-}
+    main {
+        columns: 4;
+    }
 }
