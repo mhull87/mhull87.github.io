@@ -373,12 +373,17 @@ article {
 
 article h3 {
     text-align: center;
+    margin-top: 2%;
 }
 
-article picture {
+article figure {
     max-width: 400px;
     float: right;
-    padding: 2%;
+}
+
+article figcaption {
+    font-size: smaller;
+    font-weight: bolder;
 }
 
 article p {
