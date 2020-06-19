@@ -21,9 +21,8 @@ header {
     display: block;
 }
 
-.articleimg {
+article img {
     float: right;
-    padding: 2%;
 }
 
 .gallery {
@@ -34,29 +33,30 @@ header {
     grid-template-columns: 1fr 5% 1fr;
     }
     
-    .companyname {
+    #companyname {
         grid-area: 1/3/2/4;
         margin: 0;
         place-self: end start;
     }
     
-    .add {
+    #add {
         grid-area: 2/3/3/4;
         place-self: center start;
         margin: 0;
     }
     
-    .phone {
+    #phone {
         grid-area: 3/3/4/4;
         place-self: start;
         margin: 0;
     }
     
-    .map {
+    #map {
         grid-area: 1/1/4/2;
         justify-self: end;
     }
 
+/*-----------------------------home------------------------*/
     .cards {
         display: flex;
         flex-direction: column;

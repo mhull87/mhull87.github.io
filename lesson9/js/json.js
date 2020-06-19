@@ -9,7 +9,6 @@ fetch(requestURL)
 .then(function (jsonObject) {
 
     const towns = jsonObject['towns'];
-    console.table(jsonObject);
     const three = towns.filter(town => (town.name == 'Preston' || town.name == 'Fish Haven' || town.name == 'Soda Springs'));
 
     three.forEach(town => {

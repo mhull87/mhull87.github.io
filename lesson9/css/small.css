@@ -122,7 +122,6 @@ h2 {
 }
 
 h3 {
-    align-content: center;
     border-bottom: 1px solid #50c9ce;
     font-size: 2rem;
 }
@@ -147,6 +146,10 @@ h3 {
     opacity: .7;
     padding: 2%;
     border: .5rem outset #bbe0ff;
+}
+
+section.summary p {
+    text-align: left;
 }
 
 .summary h3, .summary p {
@@ -183,14 +186,25 @@ h3 {
 }
 
 /*--------------------Article Div------------------------*/
-.article {
-    padding: 2%;
+article {
+    padding: 0 2% 2% 2%;
+    margin-top: 2%;
     text-align: justify;
+    border: 5px outset #50c9ce;
+    border-radius: 10% 0 10% 0;
 }
 
-.articleimg {
-    display: block;
-    margin: auto;
+article h3 {
+    text-align: center;
+}
+
+article img {
+    max-width: 400px;
+}
+
+article p {
+    text-align: justify;
+    line-height: 1.5rem;
 }
 
 /*--------------------contact info-------------------------*/
@@ -198,6 +212,10 @@ h3 {
     padding: 2%;
     background-color: #50c9ce;
     text-align: center;
+}
+
+#map {
+    max-width: 268px;
 }
 
 /*----------------------Footer-------------------------------------*/
@@ -222,7 +240,6 @@ footer.thanks {
     left: 0;
     right: 0;
     width: 100%;
-
 }
 
 footer a {
@@ -341,7 +358,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 5px double #50c9ce;
+    border: 5px outset #50c9ce;
     border-radius: 10% 0 10% 0;
     padding: 5%;
 }
@@ -364,29 +381,14 @@ textarea {
     max-width: 250px;
 }
 
-article {
-    margin: 2%;
-    padding: 2%;
-    border: 2px solid #50c9ce;
-    border-radius: 10% 0 10% 0;
-}
-
-article h3 {
-    text-align: center;
-    margin-top: 2%;
-}
-
 article figure {
     max-width: 400px;
     float: right;
+    margin: 2%;
 }
 
 article figcaption {
     font-size: smaller;
     font-weight: bolder;
-}
-
-article p {
-    text-align: justify;
-    line-height: 1.5rem;
+    font-style: italic;
 }
