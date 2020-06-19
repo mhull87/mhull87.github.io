@@ -36,8 +36,14 @@ nav ul.hide {
 
 /*------------- FORM ----------------*/
 form label.sbs {
-    padding: .4rem 0;
-    
+    padding: .4rem 0; 
 }
 
+.cards {
+    flex-direction: row;
+}
+
+.cards section {
+    display: flex;
+}
 }

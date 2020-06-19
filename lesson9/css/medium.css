@@ -56,4 +56,68 @@ header {
         grid-area: 1/1/4/2;
         justify-self: end;
     }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "name img"
+        "motto img"
+        "year img"
+        "pop img"
+        "rain img";
+    }
+  
+    .cards section:nth-of-type(2) :nth-child(1) {
+       grid-area: 1/2/2/3;
+    }
+
+    .cards section:nth-of-type(2) :nth-child(2) {
+        grid-area: 2/2/3/3;
+    }
+
+    .cards section:nth-of-type(2) :nth-child(3) {
+        grid-area: 1/1/6/2;
+    }
+
+    .cards section:nth-of-type(2) :nth-child(4) {
+        grid-area: 3/2/4/3;
+    }
+
+    .cards section:nth-of-type(2) :nth-child(5) {
+        grid-area: 4/2/5/3;
+    }
+    
+    .cards section:nth-of-type(2) :nth-child(6) {
+        grid-area: 5/2/6/3;
+    }
+    section :nth-child(1) {
+        grid-area: name;
+    }
+
+    section :nth-child(2) {
+        grid-area: motto;
+        text-align: left;
+    }
+
+    section :nth-child(3) {
+        grid-area: img;
+    }
+
+    section :nth-child(4) {
+        grid-area: year;
+    }
+
+    section :nth-child(5) {
+        grid-area: pop;
+    }
+
+    section :nth-child(6) {
+        grid-area: rain;
+    }
 }

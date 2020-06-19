@@ -20,7 +20,7 @@ body {
     font-weight: bolder;
 }
 
-/*Header*/
+/*------------------Header---------------------*/
 header {
     display: flex;
     align-items: center;
@@ -51,7 +51,7 @@ header img {
     margin: 0;
 }
 
-/*Nav*/
+/*--------------------Nav---------------------*/
 nav {
     background-color: #3D3B8E;
     text-align: center;
@@ -159,7 +159,7 @@ h3 {
     font-size: 1.5rem;
 }
 
-/*5 Day Forecast Div*/
+/*--------------------5 Day Forecast Div-------------------*/
 .forecast {
     display: none;
 }
@@ -182,7 +182,7 @@ h3 {
     width: 100%;
 }
 
-/*Article Div*/
+/*--------------------Article Div------------------------*/
 .article {
     padding: 2%;
     text-align: justify;
@@ -193,14 +193,14 @@ h3 {
     margin: auto;
 }
 
-/*contact info*/
+/*--------------------contact info-------------------------*/
 .address {
     padding: 2%;
     background-color: #50c9ce;
     text-align: center;
 }
 
-/*Footer*/
+/*----------------------Footer-------------------------------------*/
 footer {
     max-width: 950px;
     margin: auto;
@@ -229,7 +229,7 @@ footer a {
     color: white;
 }
 
-/*gallery main*/
+/*-----------------------------gallery main-------------------------*/
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -243,7 +243,7 @@ footer a {
 }
 
 
-/*lazy load*/
+/*----------------------------lazy load-----------------------*/
 img[data-src] {
     filter: blur(.2em);
 }
@@ -334,4 +334,31 @@ textarea {
     line-height: 1.5rem;
     font-size: 1rem;
     border-radius: 10px;
+}
+
+/*---------------------index----------------------*/
+.cards section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px double #50c9ce;
+    padding: 5%;
+}
+
+.cards h3 {
+    margin: 0 0 2% 0;
+}
+
+.cards h4 {
+    margin: 0 0 2% 0;
+    text-align: center;
+}
+
+.cards p {
+    margin: 0;
+    line-height: 1.15rem;
+}
+
+.cards img {
+    max-width: 250px;
 }
