@@ -46,6 +46,9 @@ form label.sbs {
 .cards section {
     display: flex;
     padding: 2%;
+    max-width: 297px;
+    height: 364px;
+    margin: auto;
 }
 
 section :nth-child(2) {
@@ -53,6 +56,6 @@ section :nth-child(2) {
 }
 
 .cards img {
-    width: min-content;
+    width: 250px;
 }
 }
