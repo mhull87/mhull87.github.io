@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Storm Center | Report A Storm">
+    <link rel="shortcut icon" href="images/wfavicon.ico">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Storm Center</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="Weather logo"></a>
+        <div class="header">
+            <h1>Weather Today</h1>
+            <p>Weather | Community | Together</p>
+        </div>
+    </header>
+
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="#">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Storm Center</h2>
+
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label class="top">Full Name*<input type="text" name="fullname" pattern="[A-Za-z\s]{5,}" required></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Zip Code*<input id="zip" name="zip" type="text" pattern="[0-9]*" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Storm Date<input type="date" name="storm-date"></label>
+
+                <label class="top">Storm Type<input type="text" list="storm-type">
+                    <datalist id="storm-type">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label>
+
+                <label class="slider">Storm Severity<br>
+                    <input id="sliderwidth" type="range" value="5" min="1" max="10" step="1" list="tickmarks" 
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                </label>
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                  </datalist>
+                
+                <label class="top">Storm Region <br><select name="region">
+                        <option value="" disabled selected>Select Region... &#9662;</option>
+                        <option value="fish-haven">Fish Haven</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda-springs">Soda Springs</option>
+                    </select>
+                </label>
+
+                <div>Are you in danger?</div>
+                <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Optional</legend>
+                <label class="top">Additional Information or Comments<textarea name="info"></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Report Storm" class="submitBtn">
+
+        </form>
+    </main>
+
+    <footer>
+        <span>&copy; <span id="year"></span> | Melissa Hull | Wisconsin | Weather Today</span>
+        <span id="date"></span>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+</body>
+
+</html>
