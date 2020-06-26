@@ -47,8 +47,9 @@
             <section class="summary">
                 <h3>Weather Summary</h3>
                 <p>Currently: <span id="currently"></span></p>
-                <p>Temp: <span id="currentTemp"></span>&deg; F</p>
-                <p>Wind Chill: <span id="chill"></span>&deg; F</p>
+                <p>Temperature: <span id="currentTemp"></span> &#8457;</p>
+                <p>Humidity: <span id="humidity"></span> %</p>
+                <p>Wind Chill: <span id="chill"></span></p>
                 <p>Wind Speed: <span id="speed"></span> mph</p>
             </section>
         </div>
@@ -59,27 +60,27 @@
                 <div class="days">
                     <p id="dayofweek1"></p>
                     <img id="img1" src="" alt="">
-                    <p><span id="forecast1"></span>&deg; F</p>
+                    <p><span id="forecast1"></span> &#8457;</p>
                 </div>
                 <div class="days">
                     <p id="dayofweek2"></p>
                     <img id="img2" src="" alt="">
-                    <p><span id="forecast2"></span>&deg; F</p>
+                    <p><span id="forecast2"></span> &#8457;</p>
                 </div>
                 <div class="days">
                     <p id="dayofweek3"></p>
                     <img id="img3" src="" alt="">
-                    <p><span id="forecast3"></span>&deg; F</p>
+                    <p><span id="forecast3"></span> &#8457;</p>
                 </div>
                 <div class="days">
                     <p id="dayofweek4"></p>
                     <img id="img4" src="" alt="">
-                    <p><span id="forecast4"></span>&deg; F</p>
+                    <p><span id="forecast4"></span> &#8457;</p>
                 </div>
                 <div class="days">
                     <p id="dayofweek5"></p>
                     <img id="img5" src="" alt="">
-                    <p><span id="forecast5"></span>&deg; F</p>
+                    <p><span id="forecast5"></span> &#8457;</p>
                 </div>
             </div>
         </div>
@@ -117,6 +118,7 @@
     <footer>
         <span>&copy; <span id="year"></span> | Melissa Hull | Wisconsin | Weather Today</span>
         <span id="date"></span>
+        <p>Forecast data from <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
     </footer>
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
