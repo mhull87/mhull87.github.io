@@ -46,10 +46,10 @@
             </picture>
             <section class="summary">
                 <h3>Weather Summary</h3>
-                <p>Currently: <span id="desc"></span></p>
-                <p>Temp: <span id="temp">49</span>&deg;f</p>
-                <p>Wind Chill: <span id="chill"></span>&deg;f</p>
-                <p>Wind Speed: <span id="speed">5</span> mph</p>
+                <p>Currently: <span id="currently"></span></p>
+                <p>Temp: <span id="currentTemp"></span>&deg; F</p>
+                <p>Wind Chill: <span id="chill"></span>&deg; F</p>
+                <p>Wind Speed: <span id="speed"></span> mph</p>
             </section>
         </div>
 
@@ -57,29 +57,29 @@
             <h3>5 Day Forecast</h3>
             <div class="forecastdays">
                 <div class="days">
-                    <p>Day 1</p>
-                    <img src="images/sunny.png" alt="Sunny>">
-                    <p>79*</p>
+                    <p id="dayofweek1"></p>
+                    <img id="img1" src="" alt="">
+                    <p><span id="forecast1"></span>&deg; F</p>
                 </div>
                 <div class="days">
-                    <p>Day 2</p>
-                    <img src="images/sunny.png" alt="Sunny">
-                    <p>81*</p>
+                    <p id="dayofweek2"></p>
+                    <img id="img2" src="" alt="">
+                    <p><span id="forecast2"></span>&deg; F</p>
                 </div>
                 <div class="days">
-                    <p>Day 3</p>
-                    <img src="images/sunny.png" alt="Sunny">
-                    <p>81*</p>
+                    <p id="dayofweek3"></p>
+                    <img id="img3" src="" alt="">
+                    <p><span id="forecast3"></span>&deg; F</p>
                 </div>
                 <div class="days">
-                    <p>Day 4</p>
-                    <img src="images/sunny.png" alt="Sunny">
-                    <p>80*</p>
+                    <p id="dayofweek4"></p>
+                    <img id="img4" src="" alt="">
+                    <p><span id="forecast4"></span>&deg; F</p>
                 </div>
                 <div class="days">
-                    <p>Day 5</p>
-                    <img src="images/sunny.png" alt="Sunny">
-                    <p>79*</p>
+                    <p id="dayofweek5"></p>
+                    <img id="img5" src="" alt="">
+                    <p><span id="forecast5"></span>&deg; F</p>
                 </div>
             </div>
         </div>
@@ -121,7 +121,7 @@
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/forecast.js"></script>
 </body>
 
 </html>

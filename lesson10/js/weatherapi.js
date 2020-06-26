@@ -16,7 +16,4 @@ fetch(apiURL)
 
         icon.setAttribute('src', imagesrc);
         icon.setAttribute('alt', desc);
-
-
-
     });
