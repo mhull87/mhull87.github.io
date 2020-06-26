@@ -172,7 +172,6 @@ section.summary p {
     justify-content: center;
     max-width: 100%;
     margin: 0 8rem;
-
 }
 
 .days  {
@@ -182,7 +181,7 @@ section.summary p {
 }
 
 .days img {
-    width: 100%;
+    width: auto;
 }
 
 /*--------------------Article Div------------------------*/
@@ -253,7 +252,7 @@ footer a {
     place-items: center;
 }
 
-.gallery figure, img {
+.gallery figure img {
     margin: auto;    
     padding: 2%;
     width: 100%;

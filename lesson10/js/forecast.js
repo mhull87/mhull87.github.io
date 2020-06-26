@@ -27,7 +27,6 @@ const getURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&unit
 fetch(getURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
 
         const fivedayforecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
 
