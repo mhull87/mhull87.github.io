@@ -6,7 +6,6 @@ const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-
         var current = jsObject.weather[0].main;
         var ftemp = jsObject.main.temp;
         var wspeed = jsObject.wind.speed;
@@ -41,12 +40,13 @@ fetch(getURL)
             const imagesrc = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
             const desc = forecast.weather[0].description;
             
-            document.getElementById(`forecast${day+1}`).textContent = Math.round(forecast.main.temp);
+            document.getElementById(`forecast${day+1}`).textContent = Math.floor(forecast.main.temp);
             document.getElementById(`dayofweek${day+1}`).textContent = weekdays[d.getDay()];
             document.getElementById(`img${day+1}`).setAttribute('src', imagesrc);
             document.getElementById(`img${day+1}`).setAttribute('alt', desc);
  
             day++;
+            d++;
         });
     });
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -93,19 +93,20 @@ fetch(getURLSS)
             const imagesrc = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
             const desc = forecast.weather[0].description;
             
-            document.getElementById(`ssforecast${day+1}`).textContent = Math.round(forecast.main.temp);
+            document.getElementById(`ssforecast${day+1}`).textContent = Math.floor(forecast.main.temp);
             document.getElementById(`ssdayofweek${day+1}`).textContent = weekdays[d.getDay()];
             document.getElementById(`ssimg${day+1}`).setAttribute('src', imagesrc);
             document.getElementById(`ssimg${day+1}`).setAttribute('alt', desc);
  
             day++;
+            d++;
         });
     });
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Fish Haven~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
 
-    const apiURLFH = 'https://api.openweathermap.org/data/2.5/weather?lat=42&lon=111&units=imperial&APPID=9e82453a440594b3cdfb2221e87e0b94';
+    const apiURLFH = 'https://api.openweathermap.org/data/2.5/weather?lat=42.0380399&lon=-111.4048681&units=imperial&APPID=9e82453a440594b3cdfb2221e87e0b94';
 
 fetch(apiURLFH)
     .then((response) => response.json())
@@ -129,7 +130,7 @@ fetch(apiURLFH)
         }
     });
 
-const getURLFH = 'https://api.openweathermap.org/data/2.5/forecast?lat=42&lon=111&units=imperial&APPID=9e82453a440594b3cdfb2221e87e0b94';
+const getURLFH = 'https://api.openweathermap.org/data/2.5/forecast?lat=42.0380399&lon=-111.4048681&units=imperial&APPID=9e82453a440594b3cdfb2221e87e0b94';
 
 fetch(getURLFH)
     .then((response) => response.json())
@@ -145,11 +146,12 @@ fetch(getURLFH)
             const imagesrc = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
             const desc = forecast.weather[0].description;
             
-            document.getElementById(`fhforecast${day+1}`).textContent = Math.round(forecast.main.temp);
+            document.getElementById(`fhforecast${day+1}`).textContent = Math.floor(forecast.main.temp);
             document.getElementById(`fhdayofweek${day+1}`).textContent = weekdays[d.getDay()];
             document.getElementById(`fhimg${day+1}`).setAttribute('src', imagesrc);
             document.getElementById(`fhimg${day+1}`).setAttribute('alt', desc);
  
             day++;
+            d++;
         });
     });
