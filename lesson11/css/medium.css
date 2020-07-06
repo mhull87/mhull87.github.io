@@ -23,6 +23,7 @@ header {
 
 article img {
     float: right;
+    max-width: 300px;
 }
 
 .gallery {

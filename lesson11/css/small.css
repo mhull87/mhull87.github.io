@@ -207,8 +207,14 @@ article h3 {
 }
 
 article img {
-    max-width: 400px;
+    max-width: 300px;
     padding: 2%;
+    display: block;
+    margin: auto;
+}
+.mainimg {
+    float: none;
+    max-width: 300px;
 }
 
 article p {

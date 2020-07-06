@@ -25,6 +25,10 @@ nav ul.hide {
     justify-content: space-around; 
  }
 
+ article img {
+     max-width: 400px;
+ }
+
 .gallery {
     grid-template-columns: 1fr 1fr 1fr;
 }
