@@ -62,4 +62,8 @@ section :nth-child(2) {
 .cards img {
     width: 250px;
 }
+
+ul {
+    list-style: none;
+}
 }
