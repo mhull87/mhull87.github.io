@@ -13,90 +13,105 @@
     <link rel="stylesheet" href="css/large.css">
     <title>~Scoots</title>
 </head>
+
 <body>
-<header>
-    <a href="index.html"><img src="images/logo.png" alt="Scooter logo"></a>
-    <div class="header">
-        <h1>~Scoots</h1>
-        <p>Adventure Begins Here</p>
-</header>
-
-<nav>
-    <button onclick="toggleMenu()">&#9776; Menu</button>
-    <ul id="primaryNav" class="hide">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="rentals.html">Rentals</a></li>
-        <li><a href="reservations.html">Reservations</a></li>
-        <li><a href="tours.html">Tours</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-</nav>
-
-<main>
-    <div class="rentnow">
-    <h2>How Will You Start Your Adventure?</h2>
-    <button><a href="rentals.html">Rent Now</a></button></div>
-    <h3>Type of Rentals</h3>
-    <ol>
-        <li>Honda Motor Scooters</li>
-        <ul>
-            <li>Honda Metropolitan (49cc) - 1 person</li>
-            <li>Honda Dio (110cc) - 2 person</li>
-            <li>Honda PCX150 (149cc) - 2 person</li>
-        </ul>
-        <li>ATV Side-by-Side</li>
-        <ul>
-            <li>Honda Pioneer 1000</li>
-        </ul>
-        <li>Jeep Rentals</li>
-        <ul>
-            <li>4-door Jeep Wrangler - manual with A/C - 5 people max</li>
-            <li>2-door Jeep Wrangler - open air - manual - 4 people max</li>
-        </ul>
-    </ol>
-
-    <section class="currentweather">
-        <h3>Current Weather</h3>
-        <p>Currently: <span id="currently"></span></p>
-        <p>Temperature: <span id="currentTemp"></span> &#8457;</p>
-        <p>Humidity: <span id="humidity"></span> %</p>
-    </section>
-
-    <div class="forecast">
-        <h3>5 Day Forecast</h3>
-        <div class="forecastdays">
-            <div class="days">
-                <p class="forecasttop" id="dayofweek1"></p>
-                <img id="img1" src="#" alt=" ">
-                <p><span id="forecast1"></span> &#8457;</p>
+    <header>
+            <div class="rentnow">
+                <h2>How Will You Start Your Adventure?</h2>
+                <button><a href="rentals.html">Rent Now</a></button>
             </div>
-            <div class="days">
-                <p class="forecasttop" id="dayofweek2"></p>
-                <img id="img2" src="#" alt=" ">
-                <p><span id="forecast2"></span> &#8457;</p>
+            
+            <div class="titlelogo">
+                <div class="title">
+                    <h1>~Scoots</h1>
+                    <p>Adventure Begins Here</p>
+                </div>
+                <a href="index.html"><img src="images/logo.png" alt="Scooter logo"></a>
             </div>
-            <div class="days">
-                <p class="forecasttop" id="dayofweek3"></p>
-                <img id="img3" src="#" alt=" ">
-                <p><span id="forecast3"></span> &#8457;</p>
-            </div>
-            <div class="days">
-                <p class="forecasttop" id="dayofweek4"></p>
-                <img id="img4" src="#" alt=" ">
-                <p><span id="forecast4"></span> &#8457;</p>
-            </div>
-            <div class="days">
-                <p class="forecasttop" id="dayofweek5"></p>
-                <img id="img5" src="#" alt=" ">
-                <p><span id="forecast5"></span> &#8457;</p>
+    </header>
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <!--       <button onclick="toggleMenu()">&#9776; Menu</button>-->
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="rentals.html"><i class="fas fa-truck-monster"></i> Rentals</a></li>
+                <li><a href="reservations.html"><i class="fas fa-dollar-sign"></i> Reservations</a></li>
+                <li><a href="tours.html"><i class="fas fa-map"></i> Tours</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
+            </ul>
+
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
+
+
+        <main>
+            <h3>Type of Rentals</h3>
+            <ol>
+                <li>Honda Motor Scooters</li>
+                <ul>
+                    <li>Honda Metropolitan (49cc) - 1 person</li>
+                    <li>Honda Dio (110cc) - 2 person</li>
+                    <li>Honda PCX150 (149cc) - 2 person</li>
+                </ul>
+                <li>ATV Side-by-Side</li>
+                <ul>
+                    <li>Honda Pioneer 1000</li>
+                </ul>
+                <li>Jeep Rentals</li>
+                <ul>
+                    <li>4-door Jeep Wrangler - manual with A/C - 5 people max</li>
+                    <li>2-door Jeep Wrangler - open air - manual - 4 people max</li>
+                </ul>
+            </ol>
+
+            <section class="currentweather">
+                <h3>Current Weather</h3>
+                <p>Currently: <span id="currently"></span></p>
+                <p>Temperature: <span id="currentTemp"></span> &#8457;</p>
+                <p>Humidity: <span id="humidity"></span> %</p>
+            </section>
+
+            <div class="forecast">
+                <h3>5 Day Forecast</h3>
+                <div class="forecastdays">
+                    <div class="days">
+                        <p class="forecasttop" id="dayofweek1"></p>
+                        <img id="img1" src="#" alt=" ">
+                        <p><span id="forecast1"></span> &#8457;</p>
+                    </div>
+                    <div class="days">
+                        <p class="forecasttop" id="dayofweek2"></p>
+                        <img id="img2" src="#" alt=" ">
+                        <p><span id="forecast2"></span> &#8457;</p>
+                    </div>
+                    <div class="days">
+                        <p class="forecasttop" id="dayofweek3"></p>
+                        <img id="img3" src="#" alt=" ">
+                        <p><span id="forecast3"></span> &#8457;</p>
+                    </div>
+                    <div class="days">
+                        <p class="forecasttop" id="dayofweek4"></p>
+                        <img id="img4" src="#" alt=" ">
+                        <p><span id="forecast4"></span> &#8457;</p>
+                    </div>
+                    <div class="days">
+                        <p class="forecasttop" id="dayofweek5"></p>
+                        <img id="img5" src="#" alt=" ">
+                        <p><span id="forecast5"></span> &#8457;</p>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
-</main>
+    <footer>
 
-<footer>
-
-</footer>
+    </footer>
+    <script src="https://kit.fontawesome.com/297bb17cc0.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
