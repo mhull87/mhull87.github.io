@@ -25,7 +25,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('images/header.jpg');
+    background-color: #3D3B8E;
     color: white;
     border-bottom: 1px solid #50c9ce;
     padding: 2%;
