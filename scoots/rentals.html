@@ -16,13 +16,13 @@
 
 <body>
     <header>
-            <div class="titlelogo">
-                <div class="title">
-                    <h1>~Scoots</h1>
-                    <p>Adventure Begins Here</p>
-                </div>
-                <a href="index.html"><img src="images/logo.png" alt="Scooter logo"></a>
+        <div class="titlelogo">
+            <div class="title">
+                <h1>~Scoots</h1>
+                <p>Adventure Begins Here</p>
             </div>
+            <a href="index.html"><img src="images/logo.png" alt="Scooter logo"></a>
+        </div>
     </header>
 
     <div class="wrapper">
@@ -43,14 +43,86 @@
             </div>
         </div>
 
-
         <main>
-            
+            <h2>Rental Options</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="6">Max Persons and Price Chart</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="header2">
+                        <th colspan="2"></th>
+                        <th colspan="2">Reservation</th>
+                        <th colspan="2">Walk-In</th>
+                    </tr>
+                    <tr class="header3">
+                        <th>Rental Type</th>
+                        <th>Max. Persons</th>
+                        <th>Half Day<br>(3 hrs)</th>
+                        <th>Full Day</th>
+                        <th>Half Day<br>(3 hrs)</th>
+                        <th>Full Day</th>
+                    </tr>
+                    <tr>
+                        <th>~Honda Metro Scooter</td>
+                        <td>1</td>
+                        <td id="metroreshalf"></td>
+                        <td id="metroresfull"></td>
+                        <td id="metrowalkhalf"></td>
+                        <td id="metrowalkfull"></td>
+                    </tr>
+                    <tr>
+                        <th>~Honda Dio Scooter</td>
+                        <td>2</td>
+                        <td id="dioreshalf"></td>
+                        <td id="dioresfull"></td>
+                        <td id="diowalkhalf"></td>
+                        <td id="diowalkfull"></td>
+                    </tr>
+                    <tr>
+                        <th>~Honda PCX150 Scooter</td>
+                        <td>2</td>
+                        <td id="pcxreshalf"></td>
+                        <td id="pcxresfull"></td>
+                        <td id="pcxwalkhalf"></td>
+                        <td id="pcxwalkfull"></td>
+                    </tr>
+                    <tr>
+                        <th>Honda Pioneer ATV</td>
+                        <td>4</td>
+                        <td id="atvreshalf"></td>
+                        <td id="atvresfull"></td>
+                        <td id="atvwalkhalf"></td>
+                        <td id="atvwalkfull"></td>
+                    </tr>
+                    <tr>
+                        <th>Jeep Wrangler - 2 door</td>
+                        <td>4</td>
+                        <td id="jeep2reshalf"></td>
+                        <td id="jeep2resfull"></td>
+                        <td id="jeep2walkhalf"></td>
+                        <td id="jeep2walkfull"></td>
+                    </tr>
+                    <tr>
+                        <th>Jeep Wrangler - 4 door with a/c</td>
+                        <td>5</td>
+                        <td id="jeep4reshalf"></td>
+                        <td id="jeep4resfull"></td>
+                        <td id="jeep4walkhalf"></td>
+                        <td id="jeep4walkfull"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
     </div>
     <footer>
-
+        <span>&copy; <span id="year"></span> | Melissa Hull | ~Scoots |</span>
+        <span id="date"></span>
     </footer>
     <script src="https://kit.fontawesome.com/297bb17cc0.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/rentals.js"></script>
 </body>
-
 </html>

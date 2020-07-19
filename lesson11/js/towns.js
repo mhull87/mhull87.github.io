@@ -83,7 +83,7 @@ fetch(requestURL)
                     list.appendChild(li);
                 });
 
-                header.textContent = `Upcomming Events`;
+                header.textContent = `Upcoming Events`;
 
                 events.appendChild(header);
                 events.appendChild(list);

@@ -16,13 +16,13 @@
 
 <body>
     <header>
-            <div class="titlelogo">
-                <div class="title">
-                    <h1>~Scoots</h1>
-                    <p>Adventure Begins Here</p>
-                </div>
-                <a href="index.html"><img src="images/logo.png" alt="Scooter logo"></a>
+        <div class="titlelogo">
+            <div class="title">
+                <h1>~Scoots</h1>
+                <p>Adventure Begins Here</p>
             </div>
+            <a href="index.html"><img src="images/logo.png" alt="Scooter logo"></a>
+        </div>
     </header>
 
     <div class="wrapper">
@@ -43,14 +43,52 @@
             </div>
         </div>
 
-
         <main>
+            <h2>Information and Services</h2>
+            <ul>
+                <li>Fuel charge not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is free of charge.</li>
+                <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                <li>Rentals may be returned to either location.</li>
+            </ul>
             
+            <h2>Contact Us</h2>
+            <form method="get" action="thanksquestion.html">
+                <fieldset>
+                    <legend>Questions</legend>
+                    <label>Full Name*<input type="text" name="name" required></label>
+                    <label>Email*<input type="email" name="email" required></label>
+                    <label><textarea name="questions"></textarea></label>
+                </fieldset>
+                <button type="submit" name="submit">Contact Us</button>
+            </form>
+            <div class="locations">
+                <div class="address1">
+                    <h3>Playa del Carmen-Cozumel Ferry dock</h3>
+                    <p>Centro, 77600 San Miguel de Cozumel, Quintana Roo, Mexico</p>
+                    <p>Teléfono: +52 987 872 0631</p>
+                </div>
+
+                <div class="address2">
+                    <h3>Terminal Puerta Maya</h3>
+                    <p>Av. Rafael E. Melgar, El Parque, 77600 San Miguel de Cozumel, Q.R., Mexico</p>
+                    <p>Teléfono: +52 987 857 2883</p>
+                </div>
+            </div>
+            <p class="map"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7474.2664974624695!2d-86.96181143158844!3d20.500763188076732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d20.5069163!2d-86.95606389999999!4m5!1s0x8f4e575f89605beb%3A0xe31143f0194b71a6!2sAv.%20Rafael%20E.%20Melgar%2C%20El%20Parque%2C%2077600%20San%20Miguel%20de%20Cozumel%2C%20Q.R.%2C%20Mexico!3m2!1d20.4949777!2d-86.96388519999999!5e0!3m2!1sen!2sus!4v1595115826979!5m2!1sen!2sus"
+                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe></p>
+        </main>
+
     </div>
     <footer>
-
+        <span>&copy; <span id="year"></span> | Melissa Hull | ~Scoots |</span>
+        <span id="date"></span>
     </footer>
     <script src="https://kit.fontawesome.com/297bb17cc0.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

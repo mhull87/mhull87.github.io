@@ -1,0 +1,37 @@
+{"pricechart":
+    
+[{"metro":
+    [{"res":
+        [{"halfday": 20}, {"fullday": 30}]},
+    {"walk":
+        [{"halfday": 25}, {"fullday": 35}]}]},
+
+{"dio":
+    [{"res":
+        [{"halfday": 30}, {"fullday": 40}]},
+    {"walk":
+        [{"halfday": 35}, {"fullday": 45}]}]},
+
+{"pcx150":
+    [{"res":
+        [{"halfday": 40}, {"fullday": 50}]},
+    {"walk":
+        [{"halfday": 45}, {"fullday": 55}]}]},
+
+{"atv":
+    [{"res":
+        [{"halfday": 50}, {"fullday": 70}]},
+    {"walk":
+        [{"halfday": 60}, {"fullday": 80}]}]},
+
+{"jeep2":
+    [{"res":
+        [{"halfday": 60}, {"fullday": 85}]},
+    {"walk":
+        [{"halfday": 70}, {"fullday": 90}]}]},
+        
+{"jeep4":
+    [{"res":
+        [{"halfday": 70}, {"fullday": 100}]},
+    {"walk":
+        [{"halfday": 85}, {"fullday": 125}]}]}]}

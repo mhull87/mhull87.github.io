@@ -14,6 +14,10 @@ body {
     max-width: 1100px;
 }
 
+a:visited {
+    color: #7068ff;
+}
+
 /*------------------Header---------------------*/
 header {
     background-image: url('../images/header.jpg');
@@ -61,7 +65,15 @@ header p {
    justify-self: left;
    background-color: #59ff479c;
    padding: 2rem .5rem;
-   color: #8f8aff;
+   color: #7068ff;
+   border: 3px outset #8cfffe;
+}
+
+.rentnow p {
+    text-align: center;
+    margin: auto;
+    font-size: larger;
+    font-weight: 900;
 }
 
 .rentnow button {
@@ -70,7 +82,6 @@ header p {
     text-align: center;
     border-radius: 5px;
     background-color: #ff825c;
-    
 }
 
 /*------------------------------------nav----------------------------------*/
@@ -85,6 +96,7 @@ header p {
     height: 100%;
     padding: 30px 0;
     background-color: #8f8aff;
+    border-right: 3px solid #58ff47;
 }
 
 .wrapper .sidebar ul li {
@@ -150,20 +162,194 @@ main {
     padding: 2%;
 }
 
-h3 {
+h2 {
     font-family: 'Passero One', cursive;
     font-size: 40px;
     color: #ff825c;
     border-bottom: 3px solid #58ff47;
-    margin: 2%;
+    margin: 5% 0 2% 0;
+}
+
+h3 {
+    color: #7068ff;
+    margin: 0 0 1% 0;
+}
+
+p {
+    line-height: 1.5rem;;
 }
 
 main ol {
     list-style: upper-roman;
     list-style-position: inside;
-    line-height: 220%;
+    line-height: 1.5rem;
 }
 
-main ol ul {
+main ol ul,
+ul {
 padding-left: 2%;
+list-style-type: circle;
+line-height: 1.5rem;
+}
+
+.weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*-------------TABLE----------------------*/
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    border-bottom: 1px solid #58ff47;
+}
+
+table thead tr th {
+    font-size: xx-large;
+    font-family: 'Passero One', cursive;
+    color: #7068ff;
+    border-bottom: 1px solid #58ff47;
+    padding-bottom: 1.2rem;
+}
+
+table tbody tr th {
+    font-size: large;
+    padding: 5px;
+    text-align: left;
+}
+
+.header2 th{
+    text-align: center;
+}
+
+.header2 th:nth-child(2) {
+    border: 1px solid #58ff47;
+}
+
+.header3 th:nth-child(odd) {
+    background-color: #8f8aff;
+}
+
+.header3 th {
+    border: 1px solid #58ff47;
+    text-align: center;
+}
+
+table tbody tr td {
+    padding: 5px;
+    text-align: center;
+}
+
+/*--------------------------FORM-------------------------*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+form fieldset {
+    text-align: left;
+    margin: 2rem;
+    border: 5px solid #58ff47;
+    padding: 2rem;
+    width: 50%;
+}
+
+form legend {
+    color: #7068ff;
+    font-weight: 700;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label {
+    display: block;
+    margin: 1rem;
+}
+
+form input {
+    display: block;
+    width: 100%;
+}
+
+form .radio {
+    display: flex;
+}
+
+form .radio label input {
+    margin-bottom: .5rem;
+}
+
+form textarea {
+    height: 200px;
+    resize: none;
+    max-height: 200px;
+    width: 100%;
+    max-width: 20rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    display: block;
+}
+
+form button {
+    border: none;
+    background-color: #ff825c;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: auto;
+    width: 95%;
+    max-width: 20rem;
+}
+
+/*---------------------------------------TOURS------------------------------*/
+
+.touradd {
+    margin-bottom: .5rem;
+}
+.touradd h3 {
+    margin: 0;
+}
+
+/*---------------------------------------CONTACT----------------------------------*/
+
+.locations {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    padding: 2%;
+}
+
+.address2 {
+    padding-top: 5%;
+}
+
+.map {
+    text-align: center;
+}
+
+a.rentalpagelink {
+    color: #ff825c;
+}
+
+/*--------------FOOTER--------------------*/
+
+footer {
+    margin-left: 200px;
+    background-color: #ff825c;
+    padding: 2%;
+    font-size: smaller;
+    text-align: center;
+    border-top: 3px solid #58ff47;
+}
+
+footer.thankyoupages {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
 }
