@@ -1,4 +1,4 @@
-/*const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=3530103&units=imperial&APPID=9e82453a440594b3cdfb2221e87e0b94';
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=3530103&units=imperial&APPID=9e82453a440594b3cdfb2221e87e0b94';
 
 fetch(apiURL)
     .then((response) => response.json())
@@ -36,4 +36,4 @@ fetch(apiURL)
                 day++;
             });
         });
-    */
+    
