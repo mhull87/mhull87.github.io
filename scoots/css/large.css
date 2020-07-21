@@ -1,0 +1,124 @@
+@media only screen and (min-width: 900px) {
+    form fieldset {
+        width: 50%;
+    }
+
+    .sidebar {
+        text-align: left;
+    }
+
+    .sidebar ul {
+        border: none;
+    }
+
+    .sidebar button {
+        display: none;
+    }
+
+    .sidebar #primarynav.hide {
+        display: block;
+    }
+
+    #primarynav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .wrapper {
+        display: flex;
+        position: relative;
+    }
+
+    .wrapper .sidebar {
+        position: fixed;
+        width: 200px;
+        height: 100%;
+        padding: 30px 0;
+        border-right: 3px solid #58ff47;
+    }
+
+    .wrapper .sidebar ul li {
+        list-style: none;
+    }
+
+    .wrapper .sidebar ul li a {
+        color: #58ff47;
+        display: block;
+        padding: 1rem;
+    }
+
+    .wrapper .sidebar .socialmedia {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        padding-left: 23px;
+    }
+
+    .wrapper .sidebar .socialmedia a i {
+        margin-bottom: .5rem;
+    }
+
+    .wrapper .sidebar .socialmedia a {
+        display: block;
+        background-color: #7068ff;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        margin: 0 5px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        color: #ff825c;
+    }
+
+    form fieldset {
+        width: 60%;
+    }
+
+    main {
+        padding-left: 250px;
+    }
+
+    footer {
+        margin-left: 200px;
+    }
+
+    header h1 {
+        font-size: 100px;
+    }
+
+    .tours {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .citytour {
+        grid-area: 1/1/2/2;
+    }
+
+    #citytourpic {
+        grid-area: 1/2/2/3;
+        place-self: center;
+    }
+
+    .fishingtour {
+        grid-area: 2/2/3/3;
+        align-self: center;
+    }
+
+    #fishingtourpic {
+        grid-area: 2/1/3/2;
+        place-self: center;
+    }
+
+    .myantour {
+        grid-area: 3/1/4/3;
+        width: 400px;
+    }
+
+    #myantourpic {
+        grid-area: 4/1/5/3;
+        place-self: center;
+    }
+
+}

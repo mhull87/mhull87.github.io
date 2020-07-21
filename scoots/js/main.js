@@ -1,6 +1,6 @@
 //hamberger menu
 function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("hide");
+    document.getElementById("primarynav").classList.toggle("hide");
 }
 
 var d = new Date();

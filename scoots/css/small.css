@@ -1,7 +1,5 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     text-decoration: none;
 }
 
@@ -16,6 +14,10 @@ body {
 
 a:visited {
     color: #7068ff;
+}
+
+ul, ol {
+    margin: 2%;
 }
 
 /*------------------Header---------------------*/
@@ -50,7 +52,7 @@ header h1 {
     margin: 0;
     padding: 0;
     font-family: 'Passero One', cursive;
-    font-size: 100px;
+    font-size: 60px;
 }
 
 header p {
@@ -85,43 +87,50 @@ header p {
 }
 
 /*------------------------------------nav----------------------------------*/
-.wrapper {
-    display: flex;
-    position: relative;
-}
-
-.wrapper .sidebar {
-    position: fixed;
-    width: 200px;
-    height: 100%;
-    padding: 30px 0;
+.sidebar {
     background-color: #8f8aff;
-    border-right: 3px solid #58ff47;
+    text-align: center;
+    border-bottom: 1px solid #58ff47;
 }
 
-.wrapper .sidebar ul li {
-    color: #58ff47;
-    border-bottom: 1px solid rgba(0, 0, 0, .05);
-    border-top: 1px solid rgba(225, 225, 225, .05);
+.sidebar #primarynav {
+    display: block;
     list-style: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 1.2rem;
 }
 
-.wrapper .sidebar ul li a .fas {
-    width: 25px;
+.sidebar #primarynav li {
+    flex: 1 1 100%;
 }
 
-.wrapper .sidebar ul li a {
+.sidebar a {
     color: #58ff47;
+    text-decoration: none;
     display: block;
     padding: 1rem;
+    border-bottom: 1px solid #7068ff;
 }
 
+.sidebar button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #58ff47;
+    width: 100%;
+}
+
+.sidebar #primarynav li.active a {
+    color: #ff825c;
+}
+
+.sidebar #primarynav.hide, .socialmedia {
+    display: none;
+}
 .wrapper .sidebar ul li.active {
     background-color: #7068ff;
-}
-
-.wrapper .sidebar ul li.active a {
-    color: #ff825c;
 }
 
 .wrapper .sidebar ul li:hover {
@@ -133,32 +142,10 @@ header p {
     color: #58ff47
 }
 
-.wrapper .sidebar .socialmedia {
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    padding-left: 23px;
-}
-
-.wrapper .sidebar .socialmedia a {
-    display: block;
-    background-color: #7068ff;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    margin: 0 5px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    color: #ff825c;
-}
-
 /*----------------------------------Main-----------------------*/
-
 
 main {
     width: 100%;
-    margin-left: 200px;
     padding: 2%;
 }
 
@@ -179,8 +166,8 @@ p {
     line-height: 1.5rem;;
 }
 
-img.shawna {
-    float: right;
+.shawna {
+    text-align: center;
 }
 
 .homepage {
@@ -278,7 +265,7 @@ form fieldset {
     margin: 2rem;
     border: 5px solid #58ff47;
     padding: 2rem;
-    width: 50%;
+    width: 80%;
 }
 
 form legend {
@@ -338,41 +325,15 @@ form button {
     margin: 0;
 }
 
-.tours {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.tourpic {
+    text-align: center;
 }
-
-.citytour {
-    grid-area: 1/1/2/2;
-}
-
-.citytourpic {
-    grid-area: 1/2/2/3;
-    place-self: center;
-}
-
-.fishingtour {
-    grid-area: 2/2/3/3;
-    align-self: center;
-}
-
-.fishingtourpic {
-    grid-area: 2/1/3/2;
-    place-self: center;
-}
-
-.myantour {
-    grid-area: 3/1/4/3;
+.tours img {
+    margin: 2%;
 }
 
 .myantourpic {
-    grid-area: 4/1/5/3;
-    place-self: center;
-}
-
-.tours img {
-    margin: 5%;
+    width: 300px;
 }
 
 /*---------------------------------------CONTACT----------------------------------*/
@@ -404,7 +365,6 @@ a.rentalpagelink {
 /*--------------FOOTER--------------------*/
 
 footer {
-    margin-left: 200px;
     background-color: #ff825c;
     padding: 2%;
     font-size: smaller;
