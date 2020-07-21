@@ -13,6 +13,10 @@
     padding: 2%;
     margin: 0;
 }
+
+.ruins {
+    width: 400px;
+}
     
     header h1 {
         font-size: 80px;
