@@ -17,7 +17,7 @@ fetch(apiURL)
     fetch(getURL)
         .then((response) => response.json())
         .then((jsObject) => {
-    console.log(jsObject);
+
             const fivedayforecast = jsObject.list.filter(x => x.dt_txt.includes('12:00:00'));
     
             const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];

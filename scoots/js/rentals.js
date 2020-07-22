@@ -1,7 +1,6 @@
 fetch('data/prices.json')
     .then(response => response.json())
     .then(jsObject => {
-        console.log(jsObject);
 
         var metroreshalf = jsObject.pricechart[0].metro[0].res[0].halfday;
         var metroresfull = jsObject.pricechart[0].metro[0].res[1].fullday;
